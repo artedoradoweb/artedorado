@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.artedorado.paginaweb.persistence.mybatis.mappers.PedidoMapper">
+    
+    <resultMap type='Pedido' id='PedidoResult'>
+        <id property='id' column='id' />
+        <result property='articulo' column='articulo' />
+        <result property='fechaPedido' column='fechapedido' />
+        <result property='tipo' column='tipo' />
+        <result property='estado' column='estado'/>
+        <result property='cantidad' column='cantidad'/>
+    </resultMap>
+
+
+    <select id="consultarPedidos" resultMap="PedidoResult" parameterType="map">
+        select * from pedidos;
+    </select>  
+              
+    <select id="consultarPedidosPorCorreo" resultMap="PedidoResult" parameterType="map">
+        select * from pedidos where correo LIKE '%'||#{correo}||'%'
+    </select>
+    <insert id="insertarPedido" parameterType="map">
+        INSERT 
+        INTO pedidos(id,articulo,fecha,tipo,estado,cantidad)
+        VALUES (#{pedido.id},#{pedido.articulo},#{pedido.fecha},#{pedido.tipo},#{pedido.estado},#{pedido.cantidad})
+    </insert>
+
+
+
+</mapper>
