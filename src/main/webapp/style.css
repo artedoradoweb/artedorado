@@ -10,7 +10,7 @@ h1, h2, h3, h4, h5, .lead {font-family: 'Droid Sans', sans-serif}
 .navbar-inverse .navbar-nav> .active>a:hover,
 .navbar-inverse .navbar-nav> .active>a:focus
 {
-	background-color:#E41B17
+	background-color:#814440
 }
 /*Navbar Link*/
 .navbar-inverse .navbar-nav> li> a
@@ -18,10 +18,10 @@ h1, h2, h3, h4, h5, .lead {font-family: 'Droid Sans', sans-serif}
 	color:#BBB;
 	padding-top: 25px;
 	padding-bottom: 25px;
-	font-size: 16px
+	font-size: 14px
 }
-.navbar-inverse .navbar-brand {color:#BBB; font-size: 30px; line-height: 40px}
-.navbar-inverse .navbar-brand span {color: #F41B17}
+.navbar-inverse .navbar-brand {color:#814440; font-size: 25px; line-height: 40px}
+.navbar-inverse .navbar-brand span {color: #FFF}
 .dropdown-menu  {background-color: #333; border-top: 3px solid #F41B17; min-width: 200px}
 .navbar-right .dropdown-menu {left: 0; right: auto}
 .dropdown-menu > li > a 
@@ -37,7 +37,7 @@ h1, h2, h3, h4, h5, .lead {font-family: 'Droid Sans', sans-serif}
 .dropdown-menu > li > a:focus 
 {
   color: #FFF;
-  background-color: #F41B17;
+  background-color: #814440;
   padding-left: 25px
 }
 .dropdown-menu .divider {background-color: #871818}
