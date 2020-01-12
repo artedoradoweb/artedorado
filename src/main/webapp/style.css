@@ -22,7 +22,7 @@ h1, h2, h3, h4, h5, .lead {font-family: 'Droid Sans', sans-serif}
 }
 .navbar-inverse .navbar-brand {color:#814440; font-size: 25px; line-height: 40px}
 .navbar-inverse .navbar-brand span {color: #FFF}
-.dropdown-menu  {background-color: #333; border-top: 3px solid #F41B17; min-width: 200px}
+.dropdown-menu  {background-color: #333; border-top: 3px solid #814440; min-width: 200px}
 .navbar-right .dropdown-menu {left: 0; right: auto}
 .dropdown-menu > li > a 
 {
@@ -40,26 +40,34 @@ h1, h2, h3, h4, h5, .lead {font-family: 'Droid Sans', sans-serif}
   background-color: #814440;
   padding-left: 25px
 }
+.btn-primary{
+   border: 0.5px solid black;
+   border-radius: 2px;
+   
+   font-size:23px;
+   color:white;
+   background-color: #814440; 
+}
 .dropdown-menu .divider {background-color: #871818}
 /*Navbar Toggle*/
-.navbar-toggle {margin-top: 18px}
+.navbar-toggle {margin-top: 0px}
 /*Carousel*/
 .carousel-caption
 {
-	bottom: 70px;
+        bottom: 300px;
 	background: rgba(3,3,3,0.3);
 	padding-right: 20px;
 	padding-left: 20px
 }
 .carousel-indicators {bottom: 0}
 .carousel-indicators li {height: 15px; width: 15px; border: 1px solid #EEE}
-.carousel-indicators .active {height: 17px; width: 17px; background-color: #E41B17}
+.carousel-indicators .active {height: 17px; width: 17px; background-color: #814440}
 .carousel-inner > .item > img { width: 100%}
 /**********End Overriding Bootstrap********/
 /*Start Section About*/
 .about {padding-top: 60px; padding-bottom: 60px}
-.about .about-paragraph1 {color: #888; font-size: 25px; margin-top: 15px}
-.about .about-paragraph2 {color: #888; font-size: 17px; margin-top: 15px}
+.about .about-paragraph1 {color: #888; font-size: 23px; margin-top: 15px}
+.about .about-paragraph2 {color: #888; font-size: 15px; margin-top: 15px}
 .about h1 {font-weight: bold}
 .about h2 {font-weight: bold}
 .about h1 span {color: #E41B17}
@@ -215,7 +223,7 @@ h1, h2, h3, h4, h5, .lead {font-family: 'Droid Sans', sans-serif}
 .contact-us
 {
 	overflow:hidden;
-	background: url('https://insurancenetusa.com/wp-content/uploads/2015/10/retirement-insurance-slide.jpg') no-repeat center center fixed;
+	background: url('img/contact.jpg') no-repeat center center fixed;
 	min-height: 300px
 }
 .contact-us .fields
@@ -282,6 +290,8 @@ h1, h2, h3, h4, h5, .lead {font-family: 'Droid Sans', sans-serif}
 	-o-background-size: cover;
 	background-size: cover;
 }
+
+
 .features .h1, 
 .features h2,
 .testimonials .h1,
